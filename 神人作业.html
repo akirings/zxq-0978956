@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设计科技工作者建言留言</title>
+    <style>
+       
+        header-warp{
+            display:flex;
+            justify-content:space-between;
+            align-items: baseline;
+            margin: 12px 0;
+        }
+        header-warp h1{
+            color:brown;
+            font-size:28px;
+        }
+        header-warp a{
+            font-size:6px;
+        }
+        red{
+            color:red;
+        }
+        table.from-table{
+            border-collapse:collapse;
+        }
+          table.from td{
+            padding:2px 8px;
+        }
+        textarea{
+            width:340px;
+            height:110px;
+        }
+        note-text{
+            color:beige;
+            font-size:14px;
+            margin:10px 0;
+        }
+        btn-box{
+            text-align:center;
+            margin:10px 0;
+        }
+        btn-box input{
+            padding:2px 8px;
+            margin:0 4px;
+        }
+        tip-list{
+            font-size:14px;
+            padding-left: 22px;
+        }
+    </style>
+</head>
+<body>
+    <table class="from-table">
+        <tr>
+            <td><label for="">姓名</label></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td><label for="">电子邮件</label></td>
+            <td><input type="email"></td>
+        </tr>
+    </table>
+    <tr>
+        <td>
+            <label for="">分类</label>
+            <select name="" id="">
+                <option value="">科技工作者留言</option>
+                <option value="">不保密</option>
+                <option value="">保密</option>
+              留言类型：
+              <select name="" id=""></select>
+            </select>>
+        </td>
+        <td><label for="">留言内容</label></td>
+        <td><textarea name="" id="" cols="50" rows="5"></textarea></td>
+    </tr>
+    <p>
+        <div class="note-text">注：如果您的留言不易公开，请选择保密选项，提交后凭系统反馈给您的留言编号，查询密码和您的姓名查询回复</div>
+    </p>
+    <div class="bnt-box">
+        <input type="submit" value="提交">
+         <input type="submit" value="清空">
+    </div>
+    <ul class="tip-list">
+        <li>请遵循国家相关法律，法规，尊重网上道德，承担一切因您的行为而直接或间接引起的法律责任</li>
+        <li>本网站拥有监管笔名和留言的一切权利</li>
+    </ul>
+</body>
+</html>

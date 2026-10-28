@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>灯箱画廊</title>
+    <style>
+        img{
+            width:100px;
+        }
+        div{
+            width:1000px;
+            height:650px;
+            background-color: rgb(123, 182, 182);
+            margin: 0 auto;
+            text-align:center;
+        }
+        h1{
+            line-height: 80px;
+            color:#fff;
+        }
+        ul{
+            margin:0;
+            padding: 0;
+        }
+        ul il{
+            display:inline-block;
+            list-style:none;
+            margin:0 5px;
+            text-align:center;
+        }
+        a{
+            text-decoration:none;
+            color:#fff;
+        }
+        a:hover{
+           border-bottom:4px solid red;
+        }
+        iframe{
+            margin-top:20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>灯箱画廊</h1>
+        <hr size="5" color="gray">
+        <marquee behavior="alternate" direction="left" width="900px" height="120px" scrollamount="5" onmouseover="this.stop()" onmouseover="this.start()">
+            <ul>
+                <li><a href="pic/t1.jpg" target="bigpic"><p>T1</p><img src="pic/t1.jpg" alt=""></a></li>
+            </ul>
+        </marquee>
+        <iframe src="" frameborder="0" name="bigpic" width="640px" height="360px"></iframe>
+    </div>
+</body>
+</html>
